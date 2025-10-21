@@ -1,0 +1,40 @@
+1. Créer un compte sur https://replit.com
+
+2. Créer un nouveau projet :
+   - Clique sur "Create Repl"
+   - Choisis "Python"
+   - Donne un nom à ton projet (ex : ladan-bot)
+
+3. Créer trois fichiers dans le projet :
+   - `main.py`
+   - `.env`
+   - `requirements.txt`
+
+4. Dans le fichier `.env`, tu mettras ton token Discord :
+   - Tu dois d’abord créer une application sur https://discord.com/developers/applications
+   - Clique sur "New Application"
+   - Va dans l’onglet "Bot" > "Add Bot"
+   - Clique sur "Reset Token" et copie le token
+   - Dans `.env`, écris :  
+     `DISCORD_TOKEN=colle_ton_token_ici`
+
+5. Dans l’onglet "OAuth2" > "URL Generator" :
+   - Coche "bot" et "applications.commands"
+   - Coche les permissions : "Send Messages", "Use Slash Commands"
+   - Copie l’URL générée et ouvre-la dans ton navigateur
+   - Invite le bot dans ton serveur Discord
+
+6. Dans le fichier `requirements.txt`, tu dois écrire les dépendances :
+   - `discord.py`
+   - `python-dotenv`
+
+7. Clique sur le fichier `requirements.txt` pour que Replit installe automatiquement les dépendances
+
+8. Une fois que tout est prêt :
+   - Clique sur "Run" pour lancer le bot
+   - Si tout est bien configuré, le bot se connectera à ton serveur
+
+9. Tu peux maintenant ajouter des commandes slash dans le fichier `main.py` (ex : `/roll` pour lancer un dé)
+
+10. Le bot est actif. Tu peux taper `/roll` dans ton serveur Discord pour tester (si la commande a été codée).
+
